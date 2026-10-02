@@ -1,0 +1,1448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Paradise Farm | Luxury Wedding & Celebration Destination | Surat, Gujarat</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="Paradise Farm is Surat's premier luxury wedding and celebration destination. Experience royal illuminated palace architecture, celestial floral walkways, bespoke lotus light canopies, and lush green lawns for unforgettable weddings and events.">
+  <meta name="keywords" content="Paradise Farm, Paradise Farm Surat, luxury wedding venue Surat, party plot Surat, wedding lawn Surat, Sarthana Jakatnaka, banquet hall Surat, wedding destination Gujarat">
+  <meta name="author" content="Paradise Farm">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Paradise Farm | Luxury Wedding & Celebration Destination | Surat">
+  <meta property="og:description" content="A perfect destination for memorable celebrations. Royal palace architecture, illuminated nightscapes, and expansive celebration lawns.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_IN">
+  
+  <!-- Favicon (SVG Royal Gold Crest) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='46' fill='%230B0B0A' stroke='%23D6A84F' stroke-width='4'/><path d='M38 30 L38 72 M38 30 C55 26 65 34 65 44 C65 55 54 60 38 60 M38 41 L56 41 M48 54 L64 72' fill='none' stroke='%23D6A84F' stroke-width='6' stroke-linecap='round'/></svg>">
+
+  <!-- Google Fonts: Cormorant Garamond, Playfair Display & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+  <!-- Main Luxury Design System Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===================================================================
+       1. SITE HEADER & NAVIGATION
+       =================================================================== -->
+  <header class="site-header" id="mainHeader">
+    <div class="container header-inner">
+      <!-- Left: Clean Logo (Removed extra white text & unwanted wording) -->
+      <a href="#home" class="header-logo" aria-label="Paradise Farm Homepage">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 56" class="header-logo-svg" style="height: 48px; width: auto; display: block;">
+          <defs>
+            <linearGradient id="hdrGold" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#FFF5DC" />
+              <stop offset="35%" stop-color="#D6A84F" />
+              <stop offset="70%" stop-color="#C9A45C" />
+              <stop offset="100%" stop-color="#9E7324" />
+            </linearGradient>
+          </defs>
+          <g transform="translate(4, 4)">
+            <circle cx="24" cy="24" r="22" fill="none" stroke="url(#hdrGold)" stroke-width="1.3" opacity="0.85" />
+            <circle cx="24" cy="24" r="18" fill="none" stroke="url(#hdrGold)" stroke-width="0.7" stroke-dasharray="2,2" opacity="0.6" />
+            <path d="M19 11 L24 5 L29 11 L27 13 L21 13 Z" fill="url(#hdrGold)" />
+            <path d="M19 16 L19 35 M19 16 C26 14 32 17 32 23 C32 29 26 31 19 31 M19 21 L27 21 M23 27 L31 35" fill="none" stroke="url(#hdrGold)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+          </g>
+          <text x="62" y="34" font-family="'Cormorant Garamond', 'Playfair Display', Georgia, serif" font-size="22" font-weight="700" letter-spacing="3.5" fill="url(#hdrGold)">PARADISE FARM</text>
+        </svg>
+      </a>
+
+      <!-- Center: Desktop Navigation -->
+      <nav class="header-nav" id="desktopNav">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#venues" class="nav-link">Venues</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+        <a href="#video" class="nav-link">Video</a>
+        <a href="#events" class="nav-link">Events</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Right: Book Your Event CTA & Hamburger -->
+      <div class="header-actions">
+        <button class="btn-gold-outline" onclick="openBookingModal()" style="padding: 0.75rem 1.6rem; font-size: 0.8rem;">
+          Book Your Event
+        </button>
+
+        <button class="mobile-toggle-btn" id="mobileToggleBtn" aria-label="Toggle navigation menu" onclick="toggleMobileMenu()">
+          <span class="mobile-toggle-bar"></span>
+          <span class="mobile-toggle-bar"></span>
+          <span class="mobile-toggle-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="backdrop-blur-overlay" id="menuBackdrop" onclick="toggleMobileMenu()"></div>
+  <div class="mobile-menu-overlay" id="mobileMenu">
+    <div class="mobile-menu-links">
+      <div style="margin-bottom: 2rem;">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 56" style="height: 44px; width: auto; display: block;">
+          <defs>
+            <linearGradient id="mobGold" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#FFF5DC" />
+              <stop offset="40%" stop-color="#D6A84F" />
+              <stop offset="100%" stop-color="#9E7324" />
+            </linearGradient>
+          </defs>
+          <g transform="translate(4, 4)">
+            <circle cx="24" cy="24" r="22" fill="none" stroke="url(#mobGold)" stroke-width="1.3" opacity="0.85" />
+            <circle cx="24" cy="24" r="18" fill="none" stroke="url(#mobGold)" stroke-width="0.7" stroke-dasharray="2,2" opacity="0.6" />
+            <path d="M19 11 L24 5 L29 11 L27 13 L21 13 Z" fill="url(#mobGold)" />
+            <path d="M19 16 L19 35 M19 16 C26 14 32 17 32 23 C32 29 26 31 19 31 M19 21 L27 21 M23 27 L31 35" fill="none" stroke="url(#mobGold)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" />
+          </g>
+          <text x="62" y="34" font-family="'Cormorant Garamond', 'Playfair Display', Georgia, serif" font-size="22" font-weight="700" letter-spacing="3.5" fill="url(#mobGold)">PARADISE FARM</text>
+        </svg>
+      </div>
+      <a href="#home" class="mobile-nav-link" onclick="toggleMobileMenu()">Home <span>›</span></a>
+      <a href="#about" class="mobile-nav-link" onclick="toggleMobileMenu()">About <span>›</span></a>
+      <a href="#venues" class="mobile-nav-link" onclick="toggleMobileMenu()">Venues <span>›</span></a>
+      <a href="#gallery" class="mobile-nav-link" onclick="toggleMobileMenu()">Gallery <span>›</span></a>
+      <a href="#video" class="mobile-nav-link" onclick="toggleMobileMenu()">Video <span>›</span></a>
+      <a href="#events" class="mobile-nav-link" onclick="toggleMobileMenu()">Events <span>›</span></a>
+      <a href="#contact" class="mobile-nav-link" onclick="toggleMobileMenu()">Contact <span>›</span></a>
+    </div>
+
+    <div class="mobile-menu-footer">
+      <button class="btn-gold-solid" style="width: 100%;" onclick="toggleMobileMenu(); openBookingModal();">
+        Book Your Event
+      </button>
+      <div style="font-size: 0.82rem; color: #9E998E; text-align: center;">
+        Surat, Gujarat • +91 74339 46001
+      </div>
+    </div>
+  </div>
+
+  <main>
+    <!-- ===================================================================
+         2. HERO SECTION (Follows Krishav Engineering Structure)
+         Left: Eyebrow, Stacked Editorial Heading, Description, Buttons, Slide Indicator
+         Right: Visually Dominant Cinematic Paradise Farm Venue Photography
+         =================================================================== -->
+    <section id="home" class="krishav-hero-section">
+      <div class="krishav-hero-inner">
+        <!-- Left Side: Content Area (Structured like Krishav) -->
+        <div class="krishav-hero-left">
+          <div class="krishav-hero-eyebrow">PARADISE FARM • WEDDINGS & CELEBRATIONS</div>
+          
+          <h1 class="krishav-hero-title">
+            <span class="title-row">MEMORABLE</span>
+            <span class="title-row">CELEBRATIONS</span>
+            <span class="title-row">FOR</span>
+            <span class="title-row">LIFELONG</span>
+            <span class="title-row gold-accent">MOMENTS</span>
+          </h1>
+
+          <p class="krishav-hero-desc">
+            Create unforgettable moments at Paradise Farm — a premium destination for weddings, celebrations, events and special occasions in Surat, Gujarat.
+          </p>
+
+          <div class="krishav-hero-buttons">
+            <a href="#venues" class="btn-krishav-primary">
+              Explore Our Venue
+              <span style="font-size: 1.1rem; line-height: 1;">→</span>
+            </a>
+            <button class="btn-krishav-secondary" onclick="openVideoModal()">
+              Watch Video
+              <span style="font-size: 1.1rem; line-height: 1;">→</span>
+            </button>
+          </div>
+
+          <!-- Slide Indicator on Left below CTA (Krishav Engineering Structure) -->
+          <div class="krishav-slide-indicator">
+            <div class="krishav-slide-counter">
+              <span class="current" id="slideCurrentNum">01</span>
+              <span class="slash">/</span>
+              <span class="total">04</span>
+            </div>
+            <div class="krishav-progress-bar">
+              <div class="krishav-progress-fill" id="slideProgressFill"></div>
+            </div>
+            <div class="krishav-slide-arrows">
+              <button class="krishav-arrow-btn" onclick="prevHeroSlide()" aria-label="Previous Slide">‹</button>
+              <button class="krishav-arrow-btn" onclick="nextHeroSlide()" aria-label="Next Slide">›</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side: Visually Dominant Paradise Farm Photography -->
+        <div class="krishav-hero-right">
+          <div class="krishav-right-mask"></div>
+          <div class="krishav-right-topbottom-vignette"></div>
+
+          <!-- 4 Real Paradise Farm Slides (Client Priority Images) -->
+          <img src="images/unnamed.webp" alt="Illuminated Paradise Farm Royal Palace Facade" class="krishav-slide-img active" id="heroSlideImg0">
+          <img src="images/unnamed (3).webp" alt="Grand Celebration Lawn and Night Lighting" class="krishav-slide-img" id="heroSlideImg1">
+          <img src="images/paradise farm surat - Google Search_files/unnamed(70).webp" alt="Illuminated Lotus Canopies and Sculptural Towers" class="krishav-slide-img" id="heroSlideImg2">
+          <img src="images/paradise farm surat - Google Search_files/unnamed(63).webp" alt="Celestial Grand Entrance Boulevard & Crystal Chandeliers" class="krishav-slide-img" id="heroSlideImg3">
+        </div>
+      </div>
+
+      <!-- Minimal Scroll Indicator (Bottom Right / Center) -->
+      <div class="krishav-scroll-indicator">
+        <span>Scroll to Explore</span>
+        <span class="scroll-arrow">↓</span>
+      </div>
+    </section>
+
+      <!-- 5. HERO FEATURE BAR -->
+      <div class="hero-feature-bar-wrapper">
+        <div class="hero-feature-bar">
+          <!-- Item 1: Weddings -->
+          <div class="feature-bar-item">
+            <div class="feature-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D6A84F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="14" r="7"></circle>
+                <path d="M12 2 L14 5 L10 5 Z"></path>
+                <path d="M9 5 L15 5"></path>
+              </svg>
+            </div>
+            <div class="feature-item-text">
+              <span class="feature-title">Weddings</span>
+              <span class="feature-subtitle">Make your big day unforgettable</span>
+            </div>
+          </div>
+
+          <!-- Item 2: Events & Parties -->
+          <div class="feature-bar-item">
+            <div class="feature-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D6A84F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2 L14 8 L20 10 L14 12 L12 18 L10 12 L4 10 L10 8 Z"></path>
+                <path d="M19 16 L20 18 L22 19 L20 20 L19 22 L18 20 L16 19 L18 18 Z"></path>
+              </svg>
+            </div>
+            <div class="feature-item-text">
+              <span class="feature-title">Events & Parties</span>
+              <span class="feature-subtitle">Perfect for every celebration</span>
+            </div>
+          </div>
+
+          <!-- Item 3: Spacious Venue -->
+          <div class="feature-bar-item">
+            <div class="feature-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D6A84F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 21h18"></path>
+                <path d="M5 21V7l7-4 7 4v14"></path>
+                <path d="M9 10a3 3 0 0 1 6 0v11H9V10z"></path>
+              </svg>
+            </div>
+            <div class="feature-item-text">
+              <span class="feature-title">Spacious Venue</span>
+              <span class="feature-subtitle">Large capacity & open spaces</span>
+            </div>
+          </div>
+
+          <!-- Item 4: Premium Facilities -->
+          <div class="feature-bar-item">
+            <div class="feature-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D6A84F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+            </div>
+            <div class="feature-item-text">
+              <span class="feature-title">Premium Facilities</span>
+              <span class="feature-subtitle">World-class amenities</span>
+            </div>
+          </div>
+
+          <!-- Item 5: Prime Location -->
+          <div class="feature-bar-item">
+            <div class="feature-icon-box">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#D6A84F" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <div class="feature-item-text">
+              <span class="feature-title">Prime Location</span>
+              <span class="feature-subtitle">Surat, Gujarat</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         6. SECOND PAGE / ABOUT SECTION (LIGHT EDITORIAL STYLE #F7F1E5)
+         =================================================================== -->
+    <section id="about" class="about-section">
+      <div class="about-bg-watermark">PARADISE</div>
+
+      <div class="container">
+        <div class="about-editorial-grid">
+          <!-- Left Column: Editorial Text -->
+          <div class="about-text-column">
+            <span class="luxury-tag">ABOUT PARADISE FARM</span>
+            <h2 class="about-main-heading">
+              A Venue Where Moments <em>Turn Into</em> Lifelong Memories
+            </h2>
+            <p class="about-supporting-text">
+              Paradise Farm is more than a venue — it is a place where celebrations come to life. From elegant weddings and grand receptions to private gatherings and unforgettable events, every space is designed to create memorable experiences.
+            </p>
+            <p class="about-supporting-text" style="margin-top: -1rem;">
+              Located near Sarthana on the Pasodara Road in Surat, Paradise Farm merges royal Rajasthani-inspired architectural grandeur with expansive manicured green turf, modern dining pavilions, and starlit illumination.
+            </p>
+
+            <div class="about-cta-row">
+              <a href="#venues" class="btn-about-primary">
+                Discover Our Story
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+              <button class="btn-about-secondary" onclick="openVideoModal()">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                  <polygon points="6 3 20 12 6 21 6 3"></polygon>
+                </svg>
+                Watch Video
+              </button>
+            </div>
+          </div>
+
+          <!-- Right Column: Real Image Overlapping Architectural Composition -->
+          <div class="about-image-composition">
+            <div class="about-gold-badge">
+              <span class="badge-tag">Destination</span>
+              <span class="badge-val">Surat, Gujarat</span>
+            </div>
+
+            <div class="about-image-main-frame">
+              <img src="images/unnamed.webp" alt="Paradise Farm Palace Architecture" class="about-image-main" loading="lazy">
+            </div>
+
+            <div class="about-image-secondary-frame">
+              <img src="images/paradise farm surat - Google Search_files/unnamed(63).webp" alt="Paradise Farm Celestial Walkway" class="about-image-secondary" loading="lazy">
+            </div>
+          </div>
+        </div>
+
+        <!-- 7. ABOUT STATISTICS ROW -->
+        <div class="about-stats-container">
+          <div class="stat-item">
+            <span class="stat-title">Premium Venue</span>
+            <span class="stat-desc">Designed for grand celebrations</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-title">Elegant Spaces</span>
+            <span class="stat-desc">Open-air lawn & covered pavilions</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-title">Grand Celebrations</span>
+            <span class="stat-desc">Flawless hospitality & ambience</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-title">Exceptional Experience</span>
+            <span class="stat-desc">Unforgettable memories in Surat</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         8. VENUES SECTION
+         =================================================================== -->
+    <section id="venues" class="venues-section">
+      <div class="container">
+        <div class="section-header-center">
+          <span class="luxury-tag">EXQUISITE SPACES</span>
+          <h2 class="section-title">
+            Distinguished <span class="gold-gradient-text">Celebration Venues</span>
+          </h2>
+          <p class="section-subtitle">
+            Explore our meticulously curated event zones — each engineered with regal aesthetics, grand scale, and impeccable comfort.
+          </p>
+        </div>
+
+        <div class="venues-grid">
+          <!-- Venue 1: Main Lawn (Featured) -->
+          <div class="venue-card featured-card">
+            <div class="venue-image-frame">
+              <img src="images/paradise farm surat - Google Search_files/unnamed(70).webp" alt="The Imperial Main Lawn" class="venue-img" loading="lazy">
+              <div class="venue-overlay-gradient"></div>
+              <div class="venue-badge-pill">Main Lawn</div>
+            </div>
+            <div class="venue-card-body">
+              <div>
+                <h3 class="venue-card-title">The Imperial Main Lawn</h3>
+                <p class="venue-card-desc">
+                  An expansive manicured lush green lawn illuminated by bespoke glowing lotus canopies and sculptured light towers for dream celebrations under open skies.
+                </p>
+              </div>
+              <div class="venue-card-footer">
+                <span class="venue-capacity-hint">Large Capacity Open Lawn</span>
+                <button class="venue-explore-btn" onclick="openBookingModal('The Imperial Main Lawn')">
+                  Explore <span>›</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Venue 2: Royal Palace Stage -->
+          <div class="venue-card">
+            <div class="venue-image-frame">
+              <img src="images/unnamed.webp" alt="The Royal Palace Stage" class="venue-img" loading="lazy">
+              <div class="venue-overlay-gradient"></div>
+              <div class="venue-badge-pill">Wedding Setup</div>
+            </div>
+            <div class="venue-card-body">
+              <div>
+                <h3 class="venue-card-title">The Royal Palace Stage</h3>
+                <p class="venue-card-desc">
+                  A monumental palace-inspired architectural backdrop featuring traditional Rajasthani jharokhas, majestic domes, and royal night illumination.
+                </p>
+              </div>
+              <div class="venue-card-footer">
+                <span class="venue-capacity-hint">Grand Varmala & Stage</span>
+                <button class="venue-explore-btn" onclick="openBookingModal('The Royal Palace Stage')">
+                  Explore <span>›</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Venue 3: Celestial Entrance Boulevard -->
+          <div class="venue-card">
+            <div class="venue-image-frame">
+              <img src="images/paradise farm surat - Google Search_files/unnamed(63).webp" alt="Celestial Entrance Boulevard" class="venue-img" loading="lazy">
+              <div class="venue-overlay-gradient"></div>
+              <div class="venue-badge-pill">Entrance Walkway</div>
+            </div>
+            <div class="venue-card-body">
+              <div>
+                <h3 class="venue-card-title">Celestial Entrance Boulevard</h3>
+                <p class="venue-card-desc">
+                  A breathtaking royal pathway adorned with crystal chandeliers, hanging wisteria flower cascades, glowing jali lattices, and plush patterned carpeting.
+                </p>
+              </div>
+              <div class="venue-card-footer">
+                <span class="venue-capacity-hint">Royal Welcome Walkway</span>
+                <button class="venue-explore-btn" onclick="openBookingModal('Celestial Entrance Boulevard')">
+                  Explore <span>›</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Venue 4: Covered Banquet Pavilion -->
+          <div class="venue-card">
+            <div class="venue-image-frame">
+              <img src="images/paradise farm surat - Google Search_files/unnamed(64).webp" alt="The Covered Banquet Pavilion" class="venue-img" loading="lazy">
+              <div class="venue-overlay-gradient"></div>
+              <div class="venue-badge-pill">Dining Area</div>
+            </div>
+            <div class="venue-card-body">
+              <div>
+                <h3 class="venue-card-title">The Covered Banquet Pavilion</h3>
+                <p class="venue-card-desc">
+                  Expansive weather-protected banquet hall accented with vibrant traditional ceiling drapery, plush sofa rows, and spacious catering aisles.
+                </p>
+              </div>
+              <div class="venue-card-footer">
+                <span class="venue-capacity-hint">All-Weather Seating & Dining</span>
+                <button class="venue-explore-btn" onclick="openBookingModal('The Covered Banquet Pavilion')">
+                  Explore <span>›</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Venue 5: Illuminati Light Garden -->
+          <div class="venue-card">
+            <div class="venue-image-frame">
+              <img src="images/unnamed (1).webp" alt="The Illuminati Light Garden" class="venue-img" loading="lazy">
+              <div class="venue-overlay-gradient"></div>
+              <div class="venue-badge-pill">Celebration Space</div>
+            </div>
+            <div class="venue-card-body">
+              <div>
+                <h3 class="venue-card-title">The Illuminati Light Garden</h3>
+                <p class="venue-card-desc">
+                  Futuristic sculptural light pillars rising high above the green turf, creating an ambient lounge atmosphere for sangeet and evening celebrations.
+                </p>
+              </div>
+              <div class="venue-card-footer">
+                <span class="venue-capacity-hint">Evening Celebration Lounge</span>
+                <button class="venue-explore-btn" onclick="openBookingModal('The Illuminati Light Garden')">
+                  Explore <span>›</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         9. EVENTS SECTION (Interactive Editorial Category Switcher)
+         =================================================================== -->
+    <section id="events" class="events-section">
+      <div class="container">
+        <div class="section-header-center">
+          <span class="luxury-tag">OCCASIONS & MILESTONES</span>
+          <h2 class="section-title">
+            Curated For <span class="gold-gradient-text">Every Celebration</span>
+          </h2>
+          <p class="section-subtitle">
+            From traditional sacred rituals to high-energy wedding receptions, Paradise Farm transforms your vision into a grand spectacle.
+          </p>
+        </div>
+
+        <div class="events-editorial-layout">
+          <!-- Left: Categories List -->
+          <div class="events-tabs-list">
+            <div class="event-tab-card active" onclick="switchEvent(0)" id="evTab0">
+              <div class="event-tab-meta">
+                <span class="event-tab-title">Weddings & Varmala</span>
+                <span class="event-tab-tag">Sacred Unions in Regal Splendor</span>
+              </div>
+              <span class="event-tab-arrow">›</span>
+            </div>
+
+            <div class="event-tab-card" onclick="switchEvent(1)" id="evTab1">
+              <div class="event-tab-meta">
+                <span class="event-tab-title">Grand Receptions</span>
+                <span class="event-tab-tag">Celebrations Under the Stars</span>
+              </div>
+              <span class="event-tab-arrow">›</span>
+            </div>
+
+            <div class="event-tab-card" onclick="switchEvent(2)" id="evTab2">
+              <div class="event-tab-meta">
+                <span class="event-tab-title">Sangeet & Garba Nights</span>
+                <span class="event-tab-tag">Music, Dance & Vibrant Festivity</span>
+              </div>
+              <span class="event-tab-arrow">›</span>
+            </div>
+
+            <div class="event-tab-card" onclick="switchEvent(3)" id="evTab3">
+              <div class="event-tab-meta">
+                <span class="event-tab-title">Engagements & Roka</span>
+                <span class="event-tab-tag">Intimate Elegance & Modern Aesthetics</span>
+              </div>
+              <span class="event-tab-arrow">›</span>
+            </div>
+
+            <div class="event-tab-card" onclick="switchEvent(4)" id="evTab4">
+              <div class="event-tab-meta">
+                <span class="event-tab-title">Photo Booths & Selfie Corners</span>
+                <span class="event-tab-tag">Instagrammable Memories</span>
+              </div>
+              <span class="event-tab-arrow">›</span>
+            </div>
+
+            <div class="event-tab-card" onclick="switchEvent(5)" id="evTab5">
+              <div class="event-tab-meta">
+                <span class="event-tab-title">Cultural & Sacred Welcomes</span>
+                <span class="event-tab-tag">Prestige, Heritage & Grace</span>
+              </div>
+              <span class="event-tab-arrow">›</span>
+            </div>
+          </div>
+
+          <!-- Right: Active Event Feature Card -->
+          <div class="event-feature-display" id="eventDisplay">
+            <div class="event-feature-image-frame">
+              <img id="eventImg" src="images/paradise farm surat - Google Search_files/unnamed(36).jpg" alt="Weddings and Celebrations" class="event-feature-img" loading="lazy">
+              <div class="event-feature-overlay"></div>
+            </div>
+
+            <div class="event-feature-content">
+              <span class="event-feature-highlight" id="eventHighlight">Sacred Unions in Regal Splendor</span>
+              <h3 class="event-feature-title" id="eventTitle">Weddings & Varmala</h3>
+              <p class="event-feature-desc" id="eventDesc">
+                Celebrate your big day in royal splendor. From divine mandap setups surrounded by royal candelabras to unforgettable Varmala moments against our illuminated palace facade, your wedding becomes a fairytale.
+              </p>
+
+              <div id="eventPoints" style="display: flex; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 2rem; border-top: 1px solid rgba(255,255,255,0.08); paddingTop: 1.2rem;">
+                <div style="display: flex; align-items: center; gap: 8px; font-size: 0.85rem; color: #F3E5C8;">
+                  <span style="color: #D6A84F;">★</span> Royal palace backdrop
+                </div>
+                <div style="display: flex; align-items: center; gap: 8px; font-size: 0.85rem; color: #F3E5C8;">
+                  <span style="color: #D6A84F;">★</span> Custom mandap decor
+                </div>
+                <div style="display: flex; align-items: center; gap: 8px; font-size: 0.85rem; color: #F3E5C8;">
+                  <span style="color: #D6A84F;">★</span> Photogenic varmala stage
+                </div>
+              </div>
+
+              <button class="btn-gold-solid" onclick="openBookingModal(document.getElementById('eventTitle').innerText)">
+                Plan This Event
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         10. GALLERY (Structured Grid & Right-to-Left Visual Flow)
+         =================================================================== -->
+    <section id="gallery" class="gallery-section">
+      <div class="container">
+        <div class="section-header-center">
+          <span class="luxury-tag">VISUAL SPLENDOR</span>
+          <h2 class="section-title">
+            Moments In <span class="gold-gradient-text">Paradise</span>
+          </h2>
+          <p class="section-subtitle">
+            Immerse yourself in authentic captures of our illuminated palace, floral pathways, grand lawns, and joyful celebrations.
+          </p>
+        </div>
+
+        <!-- Category Filters -->
+        <div class="gallery-filters" id="galleryFilters">
+          <button class="gallery-filter-btn active" onclick="filterGallery('All')">All</button>
+          <button class="gallery-filter-btn" onclick="filterGallery('Venue')">Venue</button>
+          <button class="gallery-filter-btn" onclick="filterGallery('Weddings')">Weddings</button>
+          <button class="gallery-filter-btn" onclick="filterGallery('Decor')">Decor</button>
+          <button class="gallery-filter-btn" onclick="filterGallery('Events')">Events</button>
+          <button class="gallery-filter-btn" onclick="filterGallery('Lighting')">Lighting</button>
+        </div>
+
+        <!-- Right-to-Left Visual Flow Bar -->
+        <div class="gallery-flow-bar">
+          <div class="gallery-flow-status">
+            <span style="font-size: 1.1rem; line-height: 1;">⇄</span>
+            <span>Right-To-Left Visual Gallery</span>
+          </div>
+          <div class="gallery-flow-controls">
+            <button class="gallery-flow-btn" onclick="scrollGalleryLeft()" aria-label="Slide Left">‹</button>
+            <button class="gallery-flow-btn" onclick="scrollGalleryRight()" aria-label="Slide Right">›</button>
+          </div>
+        </div>
+
+        <!-- Structured Grid (Aligned Boxes, Equal Gutters, No Random Masonry) -->
+        <div class="gallery-structured-grid" id="galleryGrid">
+          <!-- Populated by JS with structured row spans: [Large, Med, Med], [Med, Large, Med], etc. -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         11. VIDEO EXPERIENCE
+         =================================================================== -->
+    <section id="video" class="video-section">
+      <div class="container">
+        <div class="section-header-center">
+          <span class="luxury-tag">CINEMATIC WALKTHROUGH</span>
+          <h2 class="section-title">
+            Experience <span class="gold-gradient-text">Paradise Farm</span>
+          </h2>
+          <p class="section-subtitle">
+            Feel the grandeur of our palace night illumination, joyful crowds, and starlit atmosphere in movement.
+          </p>
+        </div>
+
+        <div class="video-player-card">
+          <img src="images/paradise farm surat - Google Search_files/unnamed(70).webp" alt="Paradise Farm Celebration Video Experience" class="video-thumbnail-img" loading="lazy">
+          <div class="video-overlay-tint"></div>
+
+          <div class="video-play-center" onclick="openVideoModal()">
+            <div class="play-pulse-ring">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="#FFFFFF">
+                <polygon points="6 3 20 12 6 21 6 3"></polygon>
+              </svg>
+            </div>
+            <span class="video-play-label">Play Experience</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         12. WHY PARADISE FARM (Editorial Pillars)
+         =================================================================== -->
+    <section class="why-section">
+      <div class="container">
+        <div class="section-header-center">
+          <span class="luxury-tag">THE PARADISE DISTINCTION</span>
+          <h2 class="section-title">
+            Why Choose <span class="gold-gradient-text">Paradise Farm</span>
+          </h2>
+          <p class="section-subtitle">
+            Crafting grand experiences requires harmony between regal architecture, modern amenities, and genuine hospitality.
+          </p>
+        </div>
+
+        <div class="why-grid">
+          <div class="why-card">
+            <div class="why-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D6A84F" stroke-width="1.6">
+                <path d="M3 21h18"></path>
+                <path d="M5 21V7l7-4 7 4v14"></path>
+                <path d="M9 10a3 3 0 0 1 6 0v11H9V10z"></path>
+              </svg>
+            </div>
+            <h3 class="why-title">Regal Palace Architecture</h3>
+            <p class="why-desc">
+              A majestic illuminated palace backdrop that bestows an authentic royal essence upon your wedding ceremonies and timeless photographs.
+            </p>
+          </div>
+
+          <div class="why-card">
+            <div class="why-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D6A84F" stroke-width="1.6">
+                <path d="M12 2 L14 8 L20 10 L14 12 L12 18 L10 12 L4 10 L10 8 Z"></path>
+                <path d="M19 16 L20 18 L22 19 L20 20 L19 22 L18 20 L16 19 L18 18 Z"></path>
+              </svg>
+            </div>
+            <h3 class="why-title">Bespoke Light Installations</h3>
+            <p class="why-desc">
+              Architectural light sculptures, glowing neon lotus canopies, and fairy-lit tree columns transforming night celebrations into a magical wonderland.
+            </p>
+          </div>
+
+          <div class="why-card">
+            <div class="why-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D6A84F" stroke-width="1.6">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                <line x1="8" y1="21" x2="16" y2="21"></line>
+                <line x1="12" y1="17" x2="12" y2="21"></line>
+              </svg>
+            </div>
+            <h3 class="why-title">Expansive Open Spaces</h3>
+            <p class="why-desc">
+              Sprawling manicured lush green turf offering generous capacity, seamless guest circulation, and open-sky grandeur.
+            </p>
+          </div>
+
+          <div class="why-card">
+            <div class="why-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D6A84F" stroke-width="1.6">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+              </svg>
+            </div>
+            <h3 class="why-title">Covered Dining Pavilion</h3>
+            <p class="why-desc">
+              All-weather dining pavilion equipped with vibrant traditional ceiling canopies, sofa lounge rows, and dedicated banquet zones.
+            </p>
+          </div>
+
+          <div class="why-card">
+            <div class="why-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D6A84F" stroke-width="1.6">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+            </div>
+            <h3 class="why-title">Convenient Surat Location</h3>
+            <p class="why-desc">
+              Easily accessible destination situated opposite Atulya Heights, on the Navjivan Hotel to Pasodara Road near Sarthana Jakatnaka.
+            </p>
+          </div>
+
+          <div class="why-card">
+            <div class="why-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#D6A84F" stroke-width="1.6">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+            </div>
+            <h3 class="why-title">Dedicated Event Hospitality</h3>
+            <p class="why-desc">
+              Attentive management committed to providing seamless coordination, ample parking, and an exceptional celebration experience.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================================================================
+         13 & 14. CONTACT SECTION & GOOGLE MAPS
+         =================================================================== -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="contact-grid">
+          <!-- Left: Contact Details -->
+          <div class="contact-info-col">
+            <span class="luxury-tag no-after">RESERVE YOUR DATE</span>
+            <h2 class="contact-main-heading">
+              Let's Create <em style="font-style: italic; color: #B88A3B;">Something</em> Memorable
+            </h2>
+            <p class="contact-desc">
+              Connect directly with our event coordination desk for site visits, availability schedules, and personalized venue walkthroughs.
+            </p>
+
+            <div class="contact-items-list">
+              <!-- Phone -->
+              <div class="contact-detail-row">
+                <div class="contact-detail-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                </div>
+                <div class="contact-detail-meta">
+                  <span class="contact-label">Phone & Reservations</span>
+                  <a href="tel:+917433946001" class="contact-value">+91 74339 46001</a>
+                  <span style="font-size: 0.85rem; color: #5C5850;">+91 99090 19100 &nbsp;|&nbsp; +91 96872 40040</span>
+                </div>
+              </div>
+
+              <!-- WhatsApp -->
+              <div class="contact-detail-row">
+                <div class="contact-detail-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+                  </svg>
+                </div>
+                <div class="contact-detail-meta">
+                  <span class="contact-label">Direct WhatsApp</span>
+                  <a href="https://wa.me/917433946001?text=Hello%20Paradise%20Farm%2C%20I%20would%20like%20to%20enquire%20about%20booking%20an%20event." target="_blank" rel="noopener noreferrer" class="contact-value">+91 74339 46001</a>
+                </div>
+              </div>
+
+              <!-- Instagram -->
+              <div class="contact-detail-row">
+                <div class="contact-detail-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                  </svg>
+                </div>
+                <div class="contact-detail-meta">
+                  <span class="contact-label">Instagram</span>
+                  <a href="https://www.instagram.com/paradisefarmsurat/" target="_blank" rel="noopener noreferrer" class="contact-value">Paradise Farm Surat (@PARADISEFARMSURAT)</a>
+                </div>
+              </div>
+
+              <!-- Address -->
+              <div class="contact-detail-row">
+                <div class="contact-detail-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div class="contact-detail-meta">
+                  <span class="contact-label">Venue Location</span>
+                  <span class="contact-value" style="font-size: 0.95rem; line-height: 1.6;">
+                    Opposite Atulya Heights, Navjivan Hotel to Pasodara Road, Sarthana Jakatnaka, Surat, Gujarat 395006
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Form -->
+          <div class="enquiry-form-card" id="formCard">
+            <form id="contactForm" onsubmit="handleFormSubmit(event)">
+              <h3 class="form-title">Request Event Consultation</h3>
+              <p class="form-subtitle">Fill in your celebration details for immediate coordination.</p>
+
+              <div id="formError" style="display: none; padding: 0.75rem 1rem; background: #FEE2E2; color: #991B1B; border-radius: 2px; font-size: 0.85rem; margin-bottom: 1.25rem;"></div>
+
+              <div class="form-grid-row">
+                <div class="form-group">
+                  <label class="form-label">Full Name *</label>
+                  <input type="text" id="fnInput" class="form-input" placeholder="e.g. Rajesh Patel" required>
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Phone Number *</label>
+                  <input type="tel" id="phInput" class="form-input" placeholder="+91 98765 43210" required>
+                </div>
+              </div>
+
+              <div class="form-grid-row">
+                <div class="form-group">
+                  <label class="form-label">Email Address</label>
+                  <input type="email" id="emInput" class="form-input" placeholder="you@example.com">
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Event Type</label>
+                  <select id="etInput" class="form-select">
+                    <option value="Wedding Ceremony">Wedding Ceremony</option>
+                    <option value="Reception & Dinner">Reception & Dinner</option>
+                    <option value="Sangeet & Garba Night">Sangeet & Garba Night</option>
+                    <option value="Engagement / Ring Ceremony">Engagement / Ring Ceremony</option>
+                    <option value="Pre-Wedding Celebration">Pre-Wedding Celebration</option>
+                    <option value="Anniversary / Milestone Party">Anniversary / Milestone Party</option>
+                    <option value="Corporate Event">Corporate Event</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-grid-row">
+                <div class="form-group">
+                  <label class="form-label">Expected Event Date</label>
+                  <input type="date" id="edInput" class="form-input">
+                </div>
+                <div class="form-group">
+                  <label class="form-label">Estimated Guests</label>
+                  <select id="gcInput" class="form-select">
+                    <option value="Under 500">Under 500 Guests</option>
+                    <option value="500-1000" selected>500 - 1,000 Guests</option>
+                    <option value="1000-2500">1,000 - 2,500 Guests</option>
+                    <option value="2500+">2,500+ Grand Gathering</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label">Celebration Notes / Requirements</label>
+                <textarea id="msgInput" class="form-textarea" placeholder="Tell us about your wedding/event vision, preferred setups, or questions..."></textarea>
+              </div>
+
+              <button type="submit" class="btn-about-primary" style="width: 100%; justify-content: center; margin-top: 1rem;">
+                Send Enquiry
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </button>
+            </form>
+
+            <div id="successCard" class="form-success-state" style="display: none;">
+              <div class="success-check-icon">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#B88A3B" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </div>
+              <h3 class="form-title">Enquiry Received!</h3>
+              <p class="form-subtitle" id="successMsg" style="max-width: 380px; margin: 0 auto 1.5rem auto;">
+                Thank you! Our Paradise Farm concierge team has received your enquiry and will contact you via phone shortly.
+              </p>
+              <button class="btn-about-secondary" onclick="resetForm()">Submit Another Enquiry</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 14. REAL GOOGLE MAPS SECTION -->
+        <div class="maps-section-wrapper">
+          <div class="maps-header-bar">
+            <div>
+              <span class="luxury-tag no-after" style="margin-bottom: 4px;">GOOGLE MAPS NAVIGATION</span>
+              <h3 class="maps-heading">Find Paradise Farm — Surat, Gujarat</h3>
+            </div>
+            <a href="https://g.co/kgs/D2QUKNy" target="_blank" rel="noopener noreferrer" class="btn-about-primary">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              Get Directions (g.co/kgs/D2QUKNy)
+            </a>
+          </div>
+          <iframe title="Paradise Farm Google Map Location" src="https://maps.google.com/maps?q=Paradise%20Farm%20Pasodara%20Sarthana%20Surat%20Gujarat&t=&z=15&ie=UTF8&iwloc=&output=embed" class="map-responsive-frame" loading="lazy" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================================================================
+       15. WHATSAPP FLOATING BUTTON
+       =================================================================== -->
+  <a href="https://wa.me/917433946001?text=Hello%20Paradise%20Farm%2C%20I%20would%20like%20to%20enquire%20about%20booking%20an%20event." target="_blank" rel="noopener noreferrer" class="floating-whatsapp-btn" aria-label="Chat with Paradise Farm on WhatsApp" title="Chat with Paradise Farm (+91 74339 46001)">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+      <path d="M9.5 9a.5.5 0 0 0-.5.5c0 1.5 1.5 3.5 3 4.5.5.3 1 .5 1.5.5a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-.5a2 2 0 0 1-1-1v-.5a.5.5 0 0 0-.5-.5h-2z" fill="#FFFFFF" stroke="none"></path>
+    </svg>
+  </a>
+
+  <!-- ===================================================================
+       16. SITE FOOTER (Dark Regal Contrast)
+       =================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-main-grid">
+        <!-- Col 1: Brand & Logo -->
+        <div class="footer-brand-col">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 76" style="width: 240px; height: 52px; display: block;">
+            <defs>
+              <linearGradient id="ftrGold" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#FFF1D0" />
+                <stop offset="35%" stop-color="#D6A84F" />
+                <stop offset="70%" stop-color="#C9A45C" />
+                <stop offset="100%" stop-color="#8E6A28" />
+              </linearGradient>
+            </defs>
+            <g transform="translate(6, 6)">
+              <circle cx="32" cy="32" r="28" fill="none" stroke="url(#ftrGold)" stroke-width="1.4" opacity="0.8" />
+              <path d="M26 15 L32 8 L38 15 L35 18 L29 18 Z" fill="url(#ftrGold)" />
+              <path d="M25 21 L25 47 M25 21 C34 19 41 23 41 30 C41 37 34 40 25 40 M25 27 L35 27 M30 35 L40 47" fill="none" stroke="url(#ftrGold)" stroke-width="2.4" stroke-linecap="round" />
+            </g>
+            <g transform="translate(78, 32)">
+              <text font-family="'Cormorant Garamond', Georgia, serif" font-size="24" font-weight="700" letter-spacing="4" fill="url(#ftrGold)">PARADISE</text>
+              <text font-family="'Cormorant Garamond', Georgia, serif" font-size="24" font-weight="400" letter-spacing="4" fill="#FFFFFF" dx="7">FARM</text>
+              <text y="18" font-family="'Inter', sans-serif" font-size="8.5" font-weight="500" letter-spacing="5.5" fill="#D6A84F">SURAT  •  GUJARAT</text>
+            </g>
+          </svg>
+          <p class="footer-tagline">
+            Surat's premier luxury wedding & celebration destination. Magnificent architecture, illuminated night scapes, and lifelong memories.
+          </p>
+        </div>
+
+        <!-- Col 2: Navigation -->
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-nav-list">
+            <li><a href="#home" class="footer-nav-link">Home</a></li>
+            <li><a href="#about" class="footer-nav-link">About</a></li>
+            <li><a href="#venues" class="footer-nav-link">Venues</a></li>
+            <li><a href="#gallery" class="footer-nav-link">Gallery</a></li>
+            <li><a href="#video" class="footer-nav-link">Video</a></li>
+            <li><a href="#events" class="footer-nav-link">Events</a></li>
+            <li><a href="#contact" class="footer-nav-link">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Celebrations -->
+        <div>
+          <h4 class="footer-col-title">Celebrations</h4>
+          <ul class="footer-nav-list">
+            <li><span class="footer-nav-link" style="cursor: default;">Royal Weddings</span></li>
+            <li><span class="footer-nav-link" style="cursor: default;">Grand Receptions</span></li>
+            <li><span class="footer-nav-link" style="cursor: default;">Sangeet & Garba</span></li>
+            <li><span class="footer-nav-link" style="cursor: default;">Engagements & Roka</span></li>
+            <li><span class="footer-nav-link" style="cursor: default;">Photo Installations</span></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact & Location -->
+        <div>
+          <h4 class="footer-col-title">Visit Paradise</h4>
+          <p style="font-size: 0.88rem; color: #D1CDC4; line-height: 1.7; margin-bottom: 1rem;">
+            Opposite Atulya Heights, Navjivan Hotel to Pasodara Road, Sarthana Jakatnaka, Surat, Gujarat 395006
+          </p>
+          <p style="font-size: 0.95rem; color: #D6A84F; font-weight: 600; margin-bottom: 0.5rem;">
+            +91 74339 46001
+          </p>
+          <a href="https://www.instagram.com/paradisefarmsurat/" target="_blank" rel="noopener noreferrer" style="display: inline-flex; align-items: center; gap: 8px; color: #F3E5C8; font-size: 0.88rem;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#D6A84F" stroke-width="1.6">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+            Instagram: @PARADISEFARMSURAT
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom-bar">
+        <span class="footer-copyright">
+          © 2026 Paradise Farm, Surat. All Rights Reserved.
+        </span>
+        <div style="display: flex; gap: 1.5rem; font-size: 0.82rem; color: #9E998E;">
+          <span>A Luxury Wedding Destination</span>
+          <span>Surat, Gujarat</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===================================================================
+       MODALS: BOOKING & LIGHTBOX & VIDEO
+       =================================================================== -->
+  <!-- Booking Modal -->
+  <div class="booking-modal-backdrop" id="bookingModal" style="display: none;" onclick="closeBookingModal()">
+    <div class="booking-modal-box" onclick="event.stopPropagation()">
+      <button class="modal-close-icon" onclick="closeBookingModal()">✕</button>
+      <span class="luxury-tag no-after" style="color: #B88A3B;">BOOK YOUR CELEBRATION</span>
+      <h3 style="font-family: var(--font-serif); font-size: 2rem; margin-bottom: 0.5rem;" id="modalTitle">
+        Plan With Paradise Farm
+      </h3>
+      <p style="font-size: 0.92rem; color: #5C5850; margin-bottom: 1.5rem;">
+        Call our booking desk directly or message us on WhatsApp for live date availability and pricing.
+      </p>
+
+      <div style="display: flex; flex-direction: column; gap: 1rem; margin-bottom: 2rem;">
+        <a href="tel:+917433946001" class="btn-gold-solid" style="width: 100%; justify-content: center;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+          </svg>
+          Call Now: +91 74339 46001
+        </a>
+        <a href="https://wa.me/917433946001?text=Hello%20Paradise%20Farm%2C%20I%20would%20like%20to%20enquire%20about%20booking%20my%20event." target="_blank" rel="noopener noreferrer" class="btn-about-secondary" style="width: 100%; justify-content: center;">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#25D366" stroke-width="2">
+            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
+          </svg>
+          WhatsApp Instant Booking
+        </a>
+      </div>
+
+      <div style="font-size: 0.82rem; color: #8A857A; border-top: 1px solid rgba(184,138,59,0.2); padding-top: 1rem; text-align: center;">
+        Opposite Atulya Heights, Navjivan Hotel to Pasodara Road, Sarthana Jakatnaka, Surat
+      </div>
+    </div>
+  </div>
+
+  <!-- Video Experience Modal -->
+  <div class="lightbox-modal" id="videoModal" style="display: none;" onclick="closeVideoModal()">
+    <button class="lightbox-close-btn" onclick="closeVideoModal()">✕</button>
+    <div class="lightbox-content-frame" style="width: 90vw; max-width: 960px;" onclick="event.stopPropagation()">
+      <div style="position: relative; width: 100%; aspect-ratio: 16/9; background: #000; border-radius: 4px; overflow: hidden; border: 1px solid var(--gold-primary);">
+        <img src="images/paradise farm surat - Google Search_files/unnamed(70).webp" alt="Paradise Farm Cinematic Video" style="width: 100%; height: 100%; object-fit: cover;">
+        <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.85) 100%); display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 2rem; text-align: center;">
+          <div class="play-pulse-ring" style="margin-bottom: 1.5rem;">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="#FFFFFF">
+              <polygon points="6 3 20 12 6 21 6 3"></polygon>
+            </svg>
+          </div>
+          <h3 style="font-family: var(--font-serif); font-size: 2.2rem; color: #FFFFFF; margin-bottom: 0.5rem;">
+            Paradise Farm Walkthrough
+          </h3>
+          <p style="color: #F3E5C8; max-width: 500px; font-size: 0.95rem; margin-bottom: 1.5rem;">
+            Experience the illuminated lotus canopies, celestial walkways, and grand palace celebrations in Surat, Gujarat.
+          </p>
+          <a href="https://www.instagram.com/paradisefarmsurat/" target="_blank" rel="noopener noreferrer" class="btn-gold-solid">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+            Watch Celebration Reels on Instagram
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Fullscreen Image Lightbox Modal -->
+  <div class="lightbox-modal" id="lightboxModal" style="display: none;" onclick="closeLightbox()">
+    <button class="lightbox-close-btn" onclick="closeLightbox()">✕</button>
+    <button class="lightbox-nav-btn lightbox-prev" onclick="event.stopPropagation(); prevLightbox()">‹</button>
+    <button class="lightbox-nav-btn lightbox-next" onclick="event.stopPropagation(); nextLightbox()">›</button>
+
+    <div class="lightbox-content-frame" onclick="event.stopPropagation()">
+      <img id="lightboxImg" src="" alt="" class="lightbox-image">
+      <div class="lightbox-caption">
+        <h4 id="lightboxTitle" class="lightbox-title"></h4>
+        <span id="lightboxCat" class="lightbox-cat"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating WhatsApp Concierge Button -->
+  <a href="https://wa.me/917433946001?text=Hello%20Paradise%20Farm%2C%20I%20would%20like%20to%20enquire%20about%20booking%20my%20event." target="_blank" rel="noopener noreferrer" class="floating-whatsapp-btn" aria-label="Chat with Paradise Farm Concierge on WhatsApp">
+    <svg viewBox="0 0 24 24">
+      <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm0 18.15c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c.01 4.54-3.69 8.23-8.22 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.39-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.15.17-.25.25-.42.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.47c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.12.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.44.53.6.19 1.15.16 1.58.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.07-.12-.23-.19-.48-.31z"/>
+    </svg>
+  </a>
+
+  <!-- ===================================================================
+       STANDALONE ROBUST JAVASCRIPT CONTROLLER (100% OFFLINE / LOCAL)
+       =================================================================== -->
+  <script>
+    // --- 1. Krishav-Structure Hero Slideshow Controller ---
+    var currentSlide = 0;
+    var totalSlides = 4;
+    var heroTimer = null;
+
+    function setHeroSlide(idx) {
+      currentSlide = (idx + totalSlides) % totalSlides;
+      for (var i = 0; i < totalSlides; i++) {
+        var img = document.getElementById('heroSlideImg' + i);
+        if (img) {
+          if (i === currentSlide) img.classList.add('active');
+          else img.classList.remove('active');
+        }
+      }
+      var numEl = document.getElementById('slideCurrentNum');
+      if (numEl) {
+        numEl.innerText = '0' + (currentSlide + 1);
+      }
+      var barEl = document.getElementById('slideProgressFill');
+      if (barEl) {
+        barEl.style.width = ((currentSlide + 1) / totalSlides * 100) + '%';
+      }
+    }
+
+    function nextHeroSlide() {
+      setHeroSlide(currentSlide + 1);
+      resetHeroTimer();
+    }
+
+    function prevHeroSlide() {
+      setHeroSlide(currentSlide - 1);
+      resetHeroTimer();
+    }
+
+    function resetHeroTimer() {
+      if (heroTimer) clearInterval(heroTimer);
+      heroTimer = setInterval(function() {
+        setHeroSlide(currentSlide + 1);
+      }, 6000);
+    }
+
+    resetHeroTimer();
+
+    // --- 2. Header Scroll & Active Link Spy ---
+    window.addEventListener('scroll', function() {
+      var header = document.getElementById('mainHeader');
+      if (window.scrollY > 40) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+
+      // ScrollSpy
+      var sections = ['home', 'about', 'venues', 'events', 'gallery', 'video', 'contact'];
+      var scrollPos = window.scrollY + 120;
+      sections.forEach(function(id) {
+        var el = document.getElementById(id);
+        if (el) {
+          var top = el.offsetTop;
+          var height = el.offsetHeight;
+          if (scrollPos >= top && scrollPos < top + height) {
+            document.querySelectorAll('#desktopNav .nav-link').forEach(function(link) {
+              if (link.getAttribute('href') === '#' + id) link.classList.add('active');
+              else link.classList.remove('active');
+            });
+          }
+        }
+      });
+    }, { passive: true });
+
+    // --- 3. Mobile Menu Toggle ---
+    function toggleMobileMenu() {
+      var menu = document.getElementById('mobileMenu');
+      var backdrop = document.getElementById('menuBackdrop');
+      var btn = document.getElementById('mobileToggleBtn');
+      menu.classList.toggle('open');
+      backdrop.classList.toggle('active');
+      btn.classList.toggle('open');
+    }
+
+    // --- 4. Events Category Switcher ---
+    var eventsData = [
+      {
+        title: "Weddings & Varmala",
+        highlight: "Sacred Unions in Regal Splendor",
+        desc: "Celebrate your big day in royal splendor. From divine mandap setups surrounded by royal candelabras to unforgettable Varmala moments against our illuminated palace facade, your wedding becomes a fairytale.",
+        img: "images/paradise farm surat - Google Search_files/unnamed(36).jpg",
+        points: ["Royal palace backdrop", "Custom mandap decor", "Photogenic varmala stage"]
+      },
+      {
+        title: "Grand Receptions",
+        highlight: "Celebrations Under the Stars",
+        desc: "Host thousands of your guests with lavish grace. Our open lawns allow seamless circulation, high-energy lighting trusses, large LED broadcast screens, and premium dining zones.",
+        img: "images/unnamed (3).webp",
+        points: ["Extensive guest capacity", "Intelligent stage lighting", "Grand family welcome"]
+      },
+      {
+        title: "Sangeet & Garba Nights",
+        highlight: "Music, Dance & Vibrant Festivity",
+        desc: "Surat's heartbeat is dance. Paradise Farm offers an electrified atmosphere with high-fidelity acoustics, spacious dance turf, and royal stage illumination perfect for traditional Garba and modern Sangeet.",
+        img: "images/paradise farm surat - Google Search_files/unnamed(24).jpg",
+        points: ["Wide dance lawn", "Acoustic stage setups", "Festive traditional aura"]
+      },
+      {
+        title: "Engagements & Roka",
+        highlight: "Intimate Elegance & Modern Aesthetics",
+        desc: "Bespoke ring ceremonies featuring contemporary floral rings, velvet sofa seating, fairy-lit accents, and personalized stage aesthetics for intimate family gatherings.",
+        img: "images/paradise farm surat - Google Search_files/unnamed(59).webp",
+        points: ["Curated circular floral stages", "Luxury sofa seating", "Editorial photo backdrops"]
+      },
+      {
+        title: "Photo Booths & Selfie Corners",
+        highlight: "Instagrammable Memories",
+        desc: "Iconic photo installations including our signature golden Paradise Farm angel wings, shimmer curtain walls, neon monogram arches, and bespoke floral backdrops.",
+        img: "images/unnamed (2).webp",
+        points: ["Glowing angel wing arch", "Better Together neon decor", "Velvet guest lounges"]
+      },
+      {
+        title: "Cultural & Sacred Welcomes",
+        highlight: "Prestige, Heritage & Grace",
+        desc: "From traditional Ganesh Vandana welcome entrances with sacred Sanskrit shlokas to executive conferences and corporate celebrations, we provide dignified grandeur.",
+        img: "images/unnamed (4).webp",
+        points: ["Traditional entrance installations", "Professional event flow", "Spacious covered pavilions"]
+      }
+    ];
+
+    function switchEvent(idx) {
+      for (var i = 0; i < 6; i++) {
+        var tab = document.getElementById('evTab' + i);
+        if (tab) {
+          if (i === idx) tab.classList.add('active');
+          else tab.classList.remove('active');
+        }
+      }
+      var ev = eventsData[idx];
+      document.getElementById('eventTitle').innerText = ev.title;
+      document.getElementById('eventHighlight').innerText = ev.highlight;
+      document.getElementById('eventDesc').innerText = ev.desc;
+      document.getElementById('eventImg').src = ev.img;
+
+      var ptsHtml = '';
+      ev.points.forEach(function(pt) {
+        ptsHtml += '<div style="display: flex; align-items: center; gap: 8px; font-size: 0.85rem; color: #F3E5C8;"><span style="color: #D6A84F;">★</span> ' + pt + '</div>';
+      });
+      document.getElementById('eventPoints').innerHTML = ptsHtml;
+    }
+
+    // --- 5. Gallery Masonry & Lightbox Controller ---
+    var galleryList = [
+      { id: 1, category: "Lighting", title: "Illuminated Lotus Canopy", image: "images/paradise farm surat - Google Search_files/unnamed(70).webp" },
+      { id: 2, category: "Decor", title: "Celestial Entrance Floral Tunnel", image: "images/paradise farm surat - Google Search_files/unnamed(63).webp" },
+      { id: 3, category: "Venue", title: "Majestic Palace Night Facade", image: "images/unnamed.webp" },
+      { id: 4, category: "Decor", title: "Paradise Farm Golden Wings", image: "images/unnamed (2).webp" },
+      { id: 5, category: "Events", title: "Grand Celebration Evening", image: "images/unnamed (3).webp" },
+      { id: 6, category: "Weddings", title: "Royal Stage & Candelabras", image: "images/paradise farm surat - Google Search_files/unnamed(36).jpg" },
+      { id: 7, category: "Events", title: "Dancing Under the Palace", image: "images/paradise farm surat - Google Search_files/unnamed(24).jpg" },
+      { id: 8, category: "Lighting", title: "Illuminated Tree Sculptures", image: "images/unnamed (1).webp" },
+      { id: 9, category: "Decor", title: "'Better Together' Lounge", image: "images/paradise farm surat - Google Search_files/unnamed(15).jpg" },
+      { id: 10, category: "Venue", title: "Covered Pavilion & Dining", image: "images/paradise farm surat - Google Search_files/unnamed(64).webp" },
+      { id: 11, category: "Decor", title: "Floral Dining Chandelier View", image: "images/paradise farm surat - Google Search_files/unnamed(51).webp" },
+      { id: 12, category: "Weddings", title: "Floral Ring Engagement Stage", image: "images/paradise farm surat - Google Search_files/unnamed(59).webp" },
+      { id: 13, category: "Decor", title: "Sacred Ganesha Welcome Shloka", image: "images/unnamed (4).webp" },
+      { id: 14, category: "Lighting", title: "Crystal Water Cylinder Fountain", image: "images/paradise farm surat - Google Search_files/unnamed(48).jpg" },
+      { id: 15, category: "Venue", title: "Sunset Lawn & Arrival Walkway", image: "images/paradise farm surat - Google Search_files/unnamed(26).jpg" },
+      { id: 16, category: "Weddings", title: "Bridal Car Floral Decoration", image: "images/paradise farm surat - Google Search_files/unnamed(34).jpg" },
+      { id: 17, category: "Decor", title: "Peacock Floral Velvet Lounge", image: "images/paradise farm surat - Google Search_files/unnamed.png" },
+      { id: 18, category: "Lighting", title: "Entrance Shimmering Golden Hall", image: "images/paradise farm surat - Google Search_files/unnamed(1).jpg" }
+    ];
+
+    var currentGalleryFilter = 'All';
+    var activeLightboxList = galleryList;
+    var currentLightboxIndex = 0;
+
+    function renderGallery() {
+      var grid = document.getElementById('galleryGrid');
+      grid.innerHTML = '';
+      activeLightboxList = galleryList.filter(function(item) {
+        return currentGalleryFilter === 'All' || item.category === currentGalleryFilter;
+      });
+
+      activeLightboxList.forEach(function(item, idx) {
+        // Structured Grid Spans:
+        // Alternating luxury editorial pattern:
+        // Row 1: [Large (span 2), Med (span 1), Med (span 1)]
+        // Row 2: [Med (span 1), Large (span 2), Med (span 1)]
+        // Row 3: [Large (span 2), Med (span 1), Med (span 1)]
+        // Row 4: [Med (span 1), Large (span 2), Med (span 1)]
+        var isLarge = (idx % 6 === 0 || idx % 6 === 4);
+        var spanClass = isLarge ? 'span-large' : 'span-medium';
+        var card = document.createElement('div');
+        card.className = 'gallery-card ' + spanClass;
+        card.onclick = function() { openLightbox(idx); };
+        card.innerHTML = 
+          '<img src="' + item.image + '" alt="' + item.title + '" class="gallery-card-img" loading="lazy">' +
+          '<div class="gallery-card-overlay">' +
+            '<span class="gallery-card-category">' + item.category + '</span>' +
+            '<h4 class="gallery-card-title">' + item.title + '</h4>' +
+          '</div>' +
+          '<div class="gallery-card-badge">⤢</div>';
+        grid.appendChild(card);
+      });
+    }
+
+    function scrollGalleryLeft() {
+      var grid = document.getElementById('galleryGrid');
+      if (grid) {
+        grid.scrollBy({ left: -360, behavior: 'smooth' });
+      }
+    }
+
+    function scrollGalleryRight() {
+      var grid = document.getElementById('galleryGrid');
+      if (grid) {
+        grid.scrollBy({ left: 360, behavior: 'smooth' });
+      }
+    }
+
+    function filterGallery(category) {
+      currentGalleryFilter = category;
+      document.querySelectorAll('#galleryFilters .gallery-filter-btn').forEach(function(btn) {
+        if (btn.innerText === category) btn.classList.add('active');
+        else btn.classList.remove('active');
+      });
+      renderGallery();
+    }
+
+    function openLightbox(idx) {
+      currentLightboxIndex = idx;
+      updateLightboxContent();
+      document.getElementById('lightboxModal').style.display = 'flex';
+    }
+
+    function closeLightbox() {
+      document.getElementById('lightboxModal').style.display = 'none';
+    }
+
+    function prevLightbox() {
+      currentLightboxIndex = (currentLightboxIndex - 1 + activeLightboxList.length) % activeLightboxList.length;
+      updateLightboxContent();
+    }
+
+    function nextLightbox() {
+      currentLightboxIndex = (currentLightboxIndex + 1) % activeLightboxList.length;
+      updateLightboxContent();
+    }
+
+    function updateLightboxContent() {
+      var item = activeLightboxList[currentLightboxIndex];
+      if (!item) return;
+      document.getElementById('lightboxImg').src = item.image;
+      document.getElementById('lightboxTitle').innerText = item.title;
+      document.getElementById('lightboxCat').innerText = item.category + ' • ' + (currentLightboxIndex + 1) + ' of ' + activeLightboxList.length;
+    }
+
+    // --- 6. Video & Booking Modals ---
+    function openVideoModal() {
+      document.getElementById('videoModal').style.display = 'flex';
+    }
+    function closeVideoModal() {
+      document.getElementById('videoModal').style.display = 'none';
+    }
+
+    function openBookingModal(customTitle) {
+      if (customTitle) {
+        document.getElementById('modalTitle').innerText = 'Plan ' + customTitle;
+      } else {
+        document.getElementById('modalTitle').innerText = 'Plan With Paradise Farm';
+      }
+      document.getElementById('bookingModal').style.display = 'flex';
+    }
+    function closeBookingModal() {
+      document.getElementById('bookingModal').style.display = 'none';
+    }
+
+    // --- 7. Contact Form Handler ---
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      var fn = document.getElementById('fnInput').value.trim();
+      var ph = document.getElementById('phInput').value.trim();
+      var errBox = document.getElementById('formError');
+
+      if (!fn) {
+        errBox.style.display = 'block';
+        errBox.innerText = 'Please enter your full name.';
+        return;
+      }
+      if (!ph || ph.length < 10) {
+        errBox.style.display = 'block';
+        errBox.innerText = 'Please enter a valid phone number.';
+        return;
+      }
+
+      errBox.style.display = 'none';
+      document.getElementById('contactForm').style.display = 'none';
+      document.getElementById('successCard').style.display = 'block';
+      document.getElementById('successMsg').innerText = 
+        'Thank you, ' + fn + '! Our Paradise Farm concierge team has received your enquiry and will contact you at ' + ph + ' shortly.';
+    }
+
+    function resetForm() {
+      document.getElementById('contactForm').reset();
+      document.getElementById('contactForm').style.display = 'block';
+      document.getElementById('successCard').style.display = 'none';
+    }
+
+    // Initialize gallery on page load
+    renderGallery();
+  </script>
+</body>
+</html>
